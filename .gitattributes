@@ -1,0 +1,3 @@
+# Linguist overrides
+docs/* linguist-documentation=false
+docs/*.md linguist-detectable=true linguist-language=Vue
