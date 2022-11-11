@@ -1,5 +1,9 @@
 {
     "scripts": {
         "docs": "docsify serve docs"
-    }
+    },
+    "workspaces": [
+        "client",
+        "docs"
+    ]
 }
