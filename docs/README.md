@@ -44,19 +44,17 @@ gantt
 
 
 ## Overview
-<div>
-<div align="left" style="width:25%;height:0;">
+
+- **PCA**: Principle Component Analysis
+- **NN**: Neural Net
+
 
 ```mermaid
-flowchart TD
+flowchart LR
    I[(Data)] --> PCA --> NN --> O[(Output)]
+
+   NN <-.-> Model
+
+   Input --> Model --> OEO[Output] --> Correction
+   EO[Expected Output] --> OEO
 ```
-</div>
-
-<div align="right" style="width:75%;height:auto;">
-
-**PCA**: Principle Component Anslysis
-</div>
-
-
-</div>

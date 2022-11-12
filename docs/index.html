@@ -16,6 +16,7 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
+      loadSidebar: true,
       name: 'Penicillin Quality Prediction',
       repo: 'plutoniumm/penicillin-prediction',
       themeColor: '#96F',
@@ -25,7 +26,7 @@
       notFoundPage: true,
       subMaxLevel: 3,
       toc: {
-        tocMaxLevel: 3,
+        tocMaxLevel: 4,
         target: 'h1, h2, h3, h4'
       },
       copyCode: {
@@ -44,13 +45,18 @@
   <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
   <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
   <script>mermaid.initialize( { startOnLoad: true } );</script>
-
+  <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
 
   <style>
     .docsify-copy-code-button {
       font-size: 12px;
       border-radius: 5px;
       margin: 5px;
+    }
+
+    .github-corner {
+      display: none;
     }
   </style>
 </body>
