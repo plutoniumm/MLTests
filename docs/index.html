@@ -24,28 +24,35 @@
       noEmoji: true,
       notFoundPage: true,
       subMaxLevel: 3,
-      markdown: {
-        renderer: {
-          code: function ( code, lang ) {
-            if ( lang === "mermaid" ) {
-              return (
-                '<div class="mermaid">' + mermaid.render( 'mermaid-svg-' + num++, code ) + "</div>"
-              );
-            }
-            return this.origin.code.apply( this, arguments );
-          }
-        }
-      },
       toc: {
         tocMaxLevel: 3,
         target: 'h1, h2, h3, h4'
-      }
+      },
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
+      },
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
 
+  <!-- CODE -->
+  <script defer src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+  <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+  <script>mermaid.initialize( { startOnLoad: true } );</script>
+
+
+  <style>
+    .docsify-copy-code-button {
+      font-size: 12px;
+      border-radius: 5px;
+      margin: 5px;
+    }
+  </style>
 </body>
 
 </html>
