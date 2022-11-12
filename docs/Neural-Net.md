@@ -26,9 +26,9 @@ $$
 N_h = \frac{N_s}{\alpha ∗ ( N_i + N_o)}
 $$
 
-<fieldset class="soft-border" style="border-radius:5px;">
+<fieldset class="soft-border" style="border-radius:5px;max-width:100%;overflow-x:scroll">
 <legend>Calculator</legend>
-<div style="display:flex;">
+<div style="display:flex;flex-wrap: wrap;">
     <div>
         Input Count: <br/>
         <input type="number" v-model="ni" :min="0"/>
@@ -40,8 +40,8 @@ $$
 </div>
 <div style="display:flex;">
     <div>
-        Scale Factor: <br/>
-        <input type="number" v-model="al" :max="10" :min="0"/>
+        Scale Factor: (max: 10) <br/>
+        <input type="number" v-model="al" :min="0"/>
     </div>
     <div>
         Sample Size: <br/>
