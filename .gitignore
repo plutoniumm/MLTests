@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 .DS_Store
-Mendeley_data/
+data/100*
 
 # C extensions
 *.so
