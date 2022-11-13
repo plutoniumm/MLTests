@@ -9,6 +9,8 @@ The 2 hidden layers are also Overkill and are included for future-proofing. A si
 
 ![Hidden Layers](assets/hldemo.png)
 
+> In our case since Principle Component Analysis was done by paper before hand we don't need to do it
+
 
 ## Hidden Layers
 - $N_h$ = # nodes in hidden layer
