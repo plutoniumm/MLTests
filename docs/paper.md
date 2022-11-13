@@ -1,4 +1,4 @@
-# Paper Summary
+# Simulator & Dataset Summary
 
 ## Model Outputs
 ![Hidden Layers](/assets/model.jpg)
@@ -117,3 +117,9 @@ AutoInputs & ManInputs --> Sim --> SensorOutputs & PhysOutputs & PATOutputs
       </tr>
    </tbody>
 </table>
+
+## Data Cleanup
+In the `data_cleanup.ipynb` we take our data set and drop all columns with the following critera (with reasons)
+- *Raman Spectral Data 0-2400* (2402 columns): 11 Inputs cannot predit 2400 outputs
+- *More than 60% Empty* (7 columns): Columns which are more than 60% empty contribute no value
+- *More than 85% 0s* (0 columns): Columns which are mostly 0 do not add value and are fillers

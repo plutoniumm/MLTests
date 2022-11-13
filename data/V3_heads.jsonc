@@ -1,0 +1,98 @@
+[
+    {
+        "none": "Time (h)"
+    },
+    {
+        "none": "Aeration rate(Fg:L/h)"
+    },
+    {
+        "none": "Agitator RPM(RPM:RPM)"
+    },
+    {
+        "none": "Sugar feed rate(Fs:L/h)"
+    },
+    {
+        "none": "Acid flow rate(Fa:L/h)"
+    },
+    {
+        "none": "Base flow rate(Fb:L/h)"
+    },
+    {
+        "none": "Heating/cooling water flow rate(Fc:L/h)"
+    },
+    {
+        "none": "Heating water flow rate(Fh:L/h)"
+    },
+    {
+        "none": "Water for injection/dilution(Fw:L/h)"
+    },
+    {
+        "none": "Air head pressure(pressure:bar)"
+    },
+    {
+        "none": "Dumped broth flow(Fremoved:L/h)"
+    },
+    {
+        "none": "Substrate concentration(S:g/L)"
+    },
+    {
+        "none": "Dissolved oxygen concentration(DO2:mg/L)"
+    },
+    {
+        "none": "Penicillin concentration(P:g/L)"
+    },
+    {
+        "none": "Vessel Volume(V:L)"
+    },
+    {
+        "none": "Vessel Weight(Wt:Kg)"
+    },
+    {
+        "none": "pH(pH:pH)"
+    },
+    {
+        "none": "Temperature(T:K)"
+    },
+    {
+        "none": "Generated heat(Q:kJ)"
+    },
+    {
+        "none": "carbon dioxide percent in off-gas(CO2outgas:%)"
+    },
+    {
+        "none": "PAA flow(Fpaa:PAA flow (L/h))"
+    },
+    {
+        "none": "Oil flow(Foil:L/hr)"
+    },
+    {
+        "none": "Oxygen Uptake Rate(OUR:(g min^{-1}))"
+    },
+    {
+        "none": "Oxygen in percent in off-gas(O2:O2  (%))"
+    },
+    {
+        "none": "Carbon evolution rate(CER:g/h)"
+    },
+    {
+        "none": "Ammonia shots(NH3_shots:kgs)"
+    },
+    {
+        "none": "Fault reference(Fault_ref:Fault ref)"
+    },
+    {
+        "none": "0 - Recipe driven 1 - Operator controlled(Control_ref:Control ref)"
+    },
+    {
+        "none": "Batch reference(Batch_ref:Batch ref)"
+    },
+    {
+        "none": "2-PAT control(PAT_ref:PAT ref)"
+    },
+    {
+        "none": "Batch ID"
+    },
+    {
+        "none": "Fault flag"
+    }
+]
