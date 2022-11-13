@@ -117,4 +117,3 @@ AutoInputs & ManInputs --> Sim --> SensorOutputs & PhysOutputs & PATOutputs
       </tr>
    </tbody>
 </table>
-
