@@ -75,9 +75,6 @@
         "none": "Carbon evolution rate(CER:g/h)"
     },
     {
-        "none": "Ammonia shots(NH3_shots:kgs)"
-    },
-    {
         "none": "Fault reference(Fault_ref:Fault ref)"
     },
     {
@@ -85,9 +82,6 @@
     },
     {
         "none": "Batch reference(Batch_ref:Batch ref)"
-    },
-    {
-        "none": "2-PAT control(PAT_ref:PAT ref)"
     },
     {
         "none": "Batch ID"
