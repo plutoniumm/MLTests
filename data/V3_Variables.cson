@@ -1,5 +1,5 @@
 Index::Type:Variable: 'ColumnName'
-# Input
+# Input (12+1)
 0::INPUT:Time: 'Time (h)'
 1::INPUT:F_g: 'Aeration rate(Fg:L/h)'
 2::INPUT:Sugar: 'Sugar feed rate(Fs:L/h)'
@@ -18,14 +18,12 @@ Index::Type:Variable: 'ColumnName'
 8::none:'Air head pressure(pressure:bar)'
 9::none:'Dumped broth flow(Fremoved:L/h)'
 13::none:'Vessel Volume(V:L)'
-# Output
+# Output (8)
 11::OUTPUT:D02: 'Dissolved oxygen concentration(DO2:mg/L)'
 *12::OUTPUT:P: 'Penicillin concentration(P:g/L)'
-14::OUTPUT:W: 'Vessel Weight(Wt:Kg)'
 15::OUTPUT:pH: 'pH(pH:pH)'
 16::OUTPUT:T: 'Temperature(T:K)'
 17::OUTPUT:Q: 'Generated heat(Q:kJ)'
 18::OUTPUT:CO2_og: 'carbon dioxide percent in off-gas(CO2outgas:%)'
 22::OUTPUT:O2_og: 'Oxygen in percent in off-gas(O2:O2  (%))'
-23::OUTPUT:Biomass: 'Carbon evolution rate(CER:g/h)'
 *24::OUTPUT:Fault: 'Fault reference(Fault_ref:Fault ref)'

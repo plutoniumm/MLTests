@@ -118,3 +118,5 @@ The following variables are also dropped
 - Batch ID: No use to us, is for machine ref
 - Agitator RPM: All values are 100 constant
 - Fault Flag: We have access to fault reference so flag is not needed
+- Weight: PCA correlation is >0.95, its a useless variable
+- Carbon Evol: PCA correlation is >0.95, its a useless variable
