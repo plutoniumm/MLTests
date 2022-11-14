@@ -15,9 +15,9 @@ Index::Type:Variable: 'ColumnName'
 # Transitory Input
 21::TRANSINPUT:OxyRev: 'Oxygen Uptake Rate(OUR:(g min^{-1}))'
 # Unknown
-8::none:'Air head pressure(pressure:bar)'
-9::none:'Dumped broth flow(Fremoved:L/h)'
-13::none:'Vessel Volume(V:L)'
+8::TRANSOUTPUT:PSI: 'Air head pressure(pressure:bar)'
+9::TRANSOUTPUT:Broth: 'Dumped broth flow(Fremoved:L/h)'
+13::TRANSOUTPUT:Vol: 'Vessel Volume(V:L)'
 # Output (8)
 11::OUTPUT:D02: 'Dissolved oxygen concentration(DO2:mg/L)'
 *12::OUTPUT:P: 'Penicillin concentration(P:g/L)'

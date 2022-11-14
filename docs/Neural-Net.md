@@ -65,10 +65,10 @@ $$
     Vue.createApp( {
         data() {
             return {
-                ni: 10,
-                no: 5,
-                ns: 10_000,
-                al: 2
+                ni: 13,
+                no: 11,
+                ns: 113_935,
+                al: 5
             }
         }
     } ).mount( '#main' );

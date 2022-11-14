@@ -120,3 +120,38 @@ The following variables are also dropped
 - Fault Flag: We have access to fault reference so flag is not needed
 - Weight: PCA correlation is >0.95, its a useless variable
 - Carbon Evol: PCA correlation is >0.95, its a useless variable
+
+> We will scale all non boolean values with `MinMaxScaler` since we need linear scales and NOT `StandardScaler`
+
+## Final variable list
+```js
+Index::Type:Variable: 'ColumnName'
+// Input (12+1)
+0::INPUT:Time: 'Time (h)'
+1::INPUT:F_g: 'Aeration rate(Fg:L/h)'
+2::INPUT:Sugar: 'Sugar feed rate(Fs:L/h)'
+3::INPUT:F_a: 'Acid flow rate(Fa:L/h)'
+4::INPUT:F_b: 'Base flow rate(Fb:L/h)'
+5::INPUT:F_c: 'Cooling water flow rate(Fc:L/h)'
+6::INPUT:F_h: 'Heating water flow rate(Fh:L/h)'
+7::INPUT:F_w: 'Water for injection/dilution(Fw:L/h)'
+10::INPUT:S: 'Substrate concentration(S:g/L)'
+19::INPUT:F_paa: 'PAA flow(Fpaa:PAA flow (L/h))'
+20::INPUT:Oil:'Oil flow(Foil:L/hr)'
+25::INPUT:Style: '0 - Recipe driven 1 - Operator controlled(Control_ref:Control ref)'
+// Transitory Input
+21::TRANSINPUT:OxyRev: 'Oxygen Uptake Rate(OUR:(g min^{-1}))'
+// Transitory Output
+8::TRANSOUTPUT:PSI: 'Air head pressure(pressure:bar)'
+9::TRANSOUTPUT:Broth: 'Dumped broth flow(Fremoved:L/h)'
+13::TRANSOUTPUT:Vol: 'Vessel Volume(V:L)'
+// Output (8+3)
+11::OUTPUT:D02: 'Dissolved oxygen concentration(DO2:mg/L)'
+*12::OUTPUT:P: 'Penicillin concentration(P:g/L)'
+15::OUTPUT:pH: 'pH(pH:pH)'
+16::OUTPUT:T: 'Temperature(T:K)'
+17::OUTPUT:Q: 'Generated heat(Q:kJ)'
+18::OUTPUT:CO2_og: 'carbon dioxide percent in off-gas(CO2outgas:%)'
+22::OUTPUT:O2_og: 'Oxygen in percent in off-gas(O2:O2  (%))'
+*24::OUTPUT:Fault: 'Fault reference(Fault_ref:Fault ref)'
+```
