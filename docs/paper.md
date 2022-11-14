@@ -11,10 +11,9 @@ Legend1("F(x) = Flow Rate of X")
 
 Sim[Simulator]
 
-AutoInputs[("
-F<sub>a/b</sub> = F(Acid/Base)
-F<sub>c</sub> = F(Cooling Water)")]
 ManInputs[("
+F<sub>a/b</sub> = F(Acid/Base)
+F<sub>c</sub> = F(Cooling Water)
 F<sub>s</sub> = F(Substrate)
 F<sub>w</sub> = F(WaterInj)
 F<sub>g</sub> = AerationRate
@@ -31,13 +30,11 @@ W = Weight
 P<sub>ag</sub> = Agitator Power
 CO<sub>2,og</sub> = CO2 off gas
 O<sub>2,og</sub> = O2 off gas
-")]
-PhysOutputs[("
 P = Penicillin
 PAA = PhenylAcetic Acid
 ")]
 
-AutoInputs & ManInputs --> Sim --> SensorOutputs & PhysOutputs
+ManInputs --> Sim --> SensorOutputs
 ```
 
 ### Control Strategy for Variables
