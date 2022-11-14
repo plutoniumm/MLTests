@@ -123,3 +123,10 @@ In the `data_cleanup.ipynb` we take our data set and drop all columns with the f
 - *Raman Spectral Data 0-2400* (2402 columns): 11 Inputs cannot predit 2400 outputs
 - *More than 60% Empty* (7 columns): Columns which are more than 60% empty contribute no value
 - *More than 85% 0s* (0 columns): Columns which are mostly 0 do not add value and are fillers
+
+The following variables are also dropped
+- Ammonia: No use to us
+- PAT: No use to us, is for machine ref
+- Batch ID: No use to us, is for machine ref
+- Agitator RPM: All values are 100 constant
+- Fault Flag: We have access to fault reference so flag is not needed
