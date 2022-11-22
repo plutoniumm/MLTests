@@ -16,5 +16,6 @@
 	"14::none":"PAA flow(Fpaa:PAA flow (L/h))",
 	"15::none":"Oil flow(Foil:L/hr)",
 	"16::none":"Oxygen Uptake Rate(OUR:(g min^{-1}))",
-	"17::none":"0 - Recipe driven 1 - Operator controlled(Control_ref:Control ref)",
+	"17::none":"Ammonia shots(NH3_shots:kgs)",
+	"18::none":"0 - Recipe driven 1 - Operator controlled(Control_ref:Control ref)",
 }

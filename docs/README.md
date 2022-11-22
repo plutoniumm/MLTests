@@ -56,20 +56,3 @@ gantt
 
     Unplanned:a1, 01-12, 24d
 ```
-
-
-## Overview
-
-- **PCA**: Principle Component Analysis
-- **NN**: Neural Net
-
-
-```mermaid
-flowchart LR
-   I[(Data)] --> PCA --> NN --> O[(Output)]
-
-   NN <-.-> Model
-
-   Input --> Model --> OEO[Output] --> Correction
-   EO[Expected Output] --> OEO
-```
