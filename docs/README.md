@@ -15,6 +15,22 @@ root
 └───ml
 ```
 
+## Main Objective Variables
+We need to use the following inputs
+1. Time (h)
+2. Substrate concentration(S:g/L)
+3. Sugar feed rate(Fs:L/h)
+4. Acid flow rate(Fa:L/h)
+5. Base flow rate(Fb:L/h)
+6. Ammonia
+7. Temperature(T:K)
+8. Water Flow [SUM OF (Fc+Fh+Fw)]
+
+In order to accurately predict
+1. Penicillin concentration(P:g/L)
+2. pH(pH:pH)
+3. Vessel Volume(V:L)
+
 
 ## Timeline
 ```mermaid
@@ -27,10 +43,9 @@ gantt
 
     Test NN !PCA :active, a1, 10-11, 8d
     Initial Docs :active, b1, 11-11, 5d
-    Leave: l1, 18-11, 4d
-    Test NN + PCA:a2, after l1, 4d
+    Test NN + PCA:a2, after b1, 6d
 
-    Adjusted NN 4 proj:a3, after a2, 3d
+    Test REGR:a3, after a2, 4d
 ```
 
 ```mermaid
