@@ -13,6 +13,16 @@ def Scale(data):
     return d_scaled
 
 
+def xy_split(data, x_keys):
+    x = data[x_keys]
+    print("x: ", len(x_keys), " keys in ", len(x.columns), "cols")
+
+    y_keys = list(set(data.columns) - set(x_keys))
+    y = data[y_keys]
+    print("y: ", len(y_keys), " keys in ", len(y.columns), "cols")
+    return (x, y)
+
+
 def processData(url):
     data = pd.read_csv(url)
     print(data.columns, "\n\n", data.shape)
