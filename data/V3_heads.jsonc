@@ -12,8 +12,6 @@
 	"10::none":"Temperature(T:K)",
 	"11::none":"PAA flow(Fpaa:PAA flow (L/h))",
 	"12::none":"Oil flow(Foil:L/hr)",
-	"13::none":"Oxygen Uptake Rate(OUR:(g min^{-1}))",
-	"14::none":"Ammonia shots(NH3_shots:kgs)",
-	"15::none":"0 - Recipe driven 1 - Operator controlled(Control_ref:Control ref)",
-	"16::none":"Water Flow",
+	"13::none":"Ammonia shots(NH3_shots:kgs)",
+	"14::none":"Water Flow",
 }
