@@ -9,6 +9,17 @@ https://www.sciencedirect.com/science/article/pii/S0098135418305106#tbl0001
 - Send Dataset/Inputs+Outputs & Expected Results
 - DNN -> 1v-Regr (explore+ more)
 
+## Regression
+- Descaling data reduces accuracy from 6% to 0.
+
+Accuracies
+| |   R2             | MAE | MSE |
+|--|----------------|---------|------------|
+|SGD Regression | 0.9700 |  0.0345     |     0.0472 |
+|Linear Regrn | 0.9726 |  0.0326     |     0.0451       |
+|Decision Tree | 0.9937 |  0.0079     |     0.0216       |
+
+
 <!--
 Penicillin is produced by the fungus Penicillium chrysogenum which requires lactose, other sugars, and a source of nitrogen (in this case a yeast extract) in the medium to grow well. -->
 
