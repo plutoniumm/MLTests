@@ -1,10 +1,11 @@
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
 
 # Scaling from 0-1
 def Scale(data):
-    scaler = MinMaxScaler()
+    # scaler = MinMaxScaler()
+    scaler = StandardScaler()
 
     d_scaled = pd.DataFrame(scaler.fit_transform(data), columns=data.columns)
     # d_scaled = d_scaled[:1000]  # Temporary only 1000
@@ -18,6 +19,16 @@ def xy_split(data, x_keys):
     print("x: ", len(x_keys), " keys in ", len(x.columns), "cols")
 
     y_keys = list(set(data.columns) - set(x_keys))
+    y = data[y_keys]
+    print("y: ", len(y_keys), " keys in ", len(y.columns), "cols")
+    return (x, y)
+
+def xy_split_y(data, y_keys):
+    x_keys = list(set(data.columns) - set(y_keys))
+
+    x = data[x_keys]
+    print("x: ", len(x_keys), " keys in ", len(x.columns), "cols")
+
     y = data[y_keys]
     print("y: ", len(y_keys), " keys in ", len(y.columns), "cols")
     return (x, y)
