@@ -138,4 +138,6 @@ parameters={
 ```
 
 ## Making Decision Tree better
-We now
+We now make the actual data better. Since the dataset is timeseries, it is impossible to make a chemical reaction with 0 knowledge of previous steps, therefore we will now create moving windows of all columns and calculate: `mean, std, max, min` and effectively make dataset 5 times larger.
+
+These values will now allow us to account for 
