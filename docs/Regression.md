@@ -124,20 +124,20 @@ parameters={
 After running 300,000 tests from the above configurations it was noticed that
 - `max_features` is a useless variable,
 - `max_depth` must be b/w 10-14
-- `max_leaf_nodes` should be 0.0 or 0.1
-- Everything else is dynamic therefore
+- `min_weight_fraction_leaf` should be 0.0 or 0.1
+- Everything else is dynamic therefore based on top 15 values
 
 ```py
 parameters={
     "splitter":["best","random"],
     "max_depth" : [i for i in range(10,15)],
-    "min_samples_leaf":[i for i in range(10)],
-    "min_weight_fraction_leaf":[0.0, 0.1, 0.2],
-    "max_leaf_nodes":[i*10 for i in range(11)]
+    "min_samples_leaf":[i for i in range(4,11)],
+    "min_weight_fraction_leaf":[0.0, 0.1],
+    "max_leaf_nodes":[i*10 for i in range(6,12)]
 }
 ```
 
 ## Making Decision Tree better
 We now make the actual data better. Since the dataset is timeseries, it is impossible to make a chemical reaction with 0 knowledge of previous steps, therefore we will now create moving windows of all columns and calculate: `mean, std, max, min` and effectively make dataset 5 times larger.
 
-These values will now allow us to account for 
+These values will now allow us to account for
