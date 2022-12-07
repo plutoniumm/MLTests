@@ -4,8 +4,8 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
 # Scaling from 0-1
 def Scale(data):
-    # scaler = MinMaxScaler()
-    scaler = StandardScaler()
+    scaler = MinMaxScaler(feature_range=(-1, 1));
+    # scaler = StandardScaler()
 
     d_scaled = pd.DataFrame(scaler.fit_transform(data), columns=data.columns)
     # d_scaled = d_scaled[:1000]  # Temporary only 1000
