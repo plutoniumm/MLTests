@@ -80,6 +80,7 @@ param_grid = {
     'reg_lambda' : [x / 100 for x in range(18,30,2)]
 }
 # RESULT: {'max_depth': 4, 'n_estimators': 85, 'reg_lambda': 0.18} # 75min
+# 1296x3 runs
 ```
 
 **GradientBoostingRegressor():**
@@ -90,6 +91,7 @@ param_grid = {
     'max_depth': list(range(4,10,1))
 }
 # {'learning_rate': 0.25, 'max_depth': 7, 'n_estimators': 80}; 64min
+# 540x3 runs
 ```
 **RandomForestRegressor():**
 ```py
@@ -98,6 +100,7 @@ param_grid = {
     'max_depth': list(range(2,8,1))
 }
 # {'max_depth': 7, 'n_estimators': 65} # 25 min
+# 288x3 runs
 ```
 
 
@@ -119,9 +122,10 @@ parameters={
     "max_features":[1.0,"log2","sqrt",None],
     "max_leaf_nodes":[None,10,20,30,40,50,60,70,80,90]
 }
+# 1.44M tests
 ```
 
-After running 300,000 tests from the above configurations it was noticed that
+After running 1.4M tests from the above configurations it was noticed that
 - `max_features` is a useless variable,
 - `max_depth` must be b/w 10-14
 - `min_weight_fraction_leaf` should be 0.0 or 0.1
