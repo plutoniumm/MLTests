@@ -14,3 +14,5 @@ Accuracy
 \*: Target
 
 > Clearly regression is the way to go
+
+https://www.kaggle.com/code/taronzakaryan/predicting-stock-price-using-lstm-model-pytorch
